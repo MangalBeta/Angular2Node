@@ -1,1 +1,19 @@
-Hii user 
+ ---------------------AngularNode Structure By Mangal Singh----------
+
+1 > This is The Setup of the Angular2 with Nodejs /
+2> firstly yo go the
+
+cd root directory and run the command npm install
+
+3 > And Then go to cd client and Also run the npm install
+
+4 > The server Listen On 3000 Port 
+
+5> If you changes in client foder then You will Make the build  in 
+ cd client folder 
+ for build run the command  npm run build ...
+ 
+ 
+ 
+ 
+ ----------------------------------------------------------------
