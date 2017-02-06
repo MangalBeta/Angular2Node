@@ -1,0 +1,73 @@
+/*
+.middle{
+  margin: 0px auto;
+  width: 500px;
+  padding-top: 10px;
+}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.small-font{
+  font-size: 13px;
+}
+*/
+
+/* New CSS Start Here*/
+.row .row{ margin-top:0px;}
+.inner-content [class*="col-"]{ padding-top: 0px; padding-bottom: 0px;}
+.inner-content{ width: 100%; margin:90px 0 0 0; padding: 30px 0 0 0; }
+.inner-content .form-mid-cont{ width:100%; max-width:700px; margin: 0 auto; border: #dcdcdc 1px solid; border-radius: 3px; overflow: hidden;}
+.inner-content .form-mid-cont .form-box{ width: 100%; padding:15px;}
+.inner-content .form-mid-cont h2{ background: #f5f5f5; padding:12px 15px; margin:0px; color: #404040; font-size:18px; border-bottom: #dcdcdc 1px solid;}
+.inner-content .form-mid-cont .form-box .refresh-img{ width: 100%; height: 38px; border:#dcdcdc 1px solid;
+text-align: center; background: #f5f5f5; border-radius:3px; }
+.inner-content .form-mid-cont .form-box .refresh-img img{ width:30px; height:30px; margin:3px 0 0 0;}
+.inner-content .form-mid-cont .form-box .attampt-area{ width: 100%; margin: 15px 0 0 0;}
+.inner-content .form-mid-cont .form-box .attampt-area .attampt{ background:#ed7878; width: 100%;
+border-radius: 3px; padding: 0 15px;}
+.inner-content .form-mid-cont .form-box .attampt-area .attampt p{ margin: 0px; color: #ffffff; padding: 10px 0;}
+.inner-content .form-mid-cont .form-group{ margin: 0px;}
+.inner-content .form-mid-cont .form-group label{ font-size: 13px;}
+.inner-content .form-mid-cont .form-group .form-control{ border:#dccdc 1px solid; line-height:38px ;
+min-height:38px; padding: 0 15px; font-size: 12px; margin:0px 0 5px 0;}
+.inner-content .form-mid-cont .form-group .accept-label{ font-size: 11px; margin: -3px 0 0 5px;}
+.inner-content .form-mid-cont .form-group .su-btn{ background: #0275d8; padding: 0px; color: #ffffff; height: 38px; line-height: 38px; text-decoration: none; padding: 0 15px;
+font-size: 14px; text-align: center; margin:15px 0 15px 0;}
+.inner-content .form-mid-cont .alert-danger{ margin: 0 0 5px 0; border-radius:3px; }
+
+@media (min-width:320px) and (max-width:767px){
+.inner-content{ padding:0px; }
+.inner-content .form-mid-cont { margin:15px 0 0 0;}
+.inner-content .form-mid-cont .form-group .su-btn{ width: 100%;}
+}

@@ -1,0 +1,16 @@
+.inner-content{ width: 100%; margin:90px 0 0 0; padding: 30px 0 0 0; }
+.inner-content .form-mid-cont{ width:100%; max-width:700px; margin: 0 auto; border: #dcdcdc 1px solid; border-radius: 3px; overflow: hidden;}
+.inner-content .form-mid-cont .form-box{ width: 100%; padding:15px;}
+.inner-content .form-mid-cont h2{ background: #f5f5f5; padding:12px 15px; margin:0px; color: #404040; font-size:18px; border-bottom: #dcdcdc 1px solid;}
+.inner-content .form-mid-cont .form-group{ margin: 0px;}
+.inner-content .form-mid-cont .form-group label{ font-size: 13px;}
+.inner-content .form-mid-cont .form-box [type="checkbox"] {float:left;margin: 3px 0 0 0}
+.inner-content .form-mid-cont .form-group .form-control{ border:#dccdc 1px solid; line-height:38px ; min-height:38px; padding: 0 15px; font-size: 12px; margin:0px 0 5px 0;}
+.inner-content .form-mid-cont .form-group .accept-label{ font-size: 11px; margin: -3px 0 0 5px;}
+.inner-content .form-mid-cont .form-group .su-btn{ background: #0275d8; padding: 0px; color: #ffffff; height: 38px; line-height: 38px; text-decoration: none; padding: 0 15px; font-size: 14px; text-align: center; margin:15px 0 0 0;}
+.inner-content .form-mid-cont .alert-danger{ margin: 0 0 5px 0; border-radius:3px; }
+.ie .inner-content .form-mid-cont .form-box [type="checkbox"] {float:left;margin: 6px 0 0 0}
+@media (min-width:320px) and (max-width:767px){
+.inner-content{ padding:0px; }
+.inner-content .form-mid-cont .form-group .su-btn{ width: 100%;}
+}

@@ -1,0 +1,61 @@
+<!--<ba-webappmenu></ba-webappmenu>-->
+
+<div class="inner-content">
+     <div class="container">
+               <div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+     <div class="form-mid-cont">
+    <!--<ba-card title="Signup" baCardClass="with-scroll">-->
+    <toaster-container [toasterconfig]="config1"></toaster-container>
+    <h2>Create a New Account</h2>
+      <!--<div [hidden]="!errorMessage" class="alert alert-danger">{{errorMessage}}</div>-->
+      <div class="form-box">
+      <form #signupForm="ngForm" (ngSubmit)="onSubmit(signupForm.value, signupForm.valid)">
+        <div class="form-group">
+          <label for="email">Email </label>
+          <input value="{{user.email}}" (blur)="onInputChanged(signupForm.value)" type="email" class="form-control" id="email" placeholder="Email"
+           required [(ngModel)]="user.email" name="email" #email="ngModel"
+           pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z]+$"
+           >
+           <div [hidden]="email.valid || (email.pristine && !signupForm.submitted)"
+              class="alert alert-danger">
+           Email is required and format should be <i>john@doe.com</i>
+         </div>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input value="{{user.password}}" (blur)="onInputChanged(signupForm.value)" type="password" class="form-control" placeholder="Password"
+           required [ngModel]="user.password" name="password" #password="ngModel"
+           minlength="6" maxlength="20" validateEqual="confirmPassword" reverse="true">
+
+           <div [hidden]="password.valid || (password.pristine && !signupForm.submitted)"
+              class="alert alert-danger">
+           Password is required(Minimum 6 characters).
+         </div>
+        </div>
+
+        <div class="form-group">
+          <label for="confirm-password"> Confirm Password</label>
+          <input value="{{user.confirmPassword}}" (blur)="onInputChanged(signupForm.value)" type="password" class="form-control"
+          placeholder="Confirm Password" required [ngModel]="user.confirmPassword"
+           name="confirmPassword" #confirmPassword="ngModel"
+           validateEqual="password">
+        </div>
+        <div [hidden]="confirmPassword.valid || (confirmPassword.pristine && !signupForm.submitted)" class="alert alert-danger">
+        Password mismatch
+      </div>
+        <div class="form-group">
+          <input type="checkbox" [ngModel]="user.acceptTC" name="acceptTC" ><label class="accept-label"> Accept <a href="javascript:void(0);" routerLink="/terms-and-conditions">Terms and Conditions</a></label>
+        </div>
+        <div class="form-group">
+          <button class="btn btn-lg su-btn" [disabled]="!signupForm.valid" type="submit">SIGN UP</button>
+        </div>
+      </form>
+</div>
+    <!--</ba-card>-->
+ </div>
+</div>
+</div>
+</div>
+</div>
+<!--<ba-webappfooter></ba-webappfooter>-->

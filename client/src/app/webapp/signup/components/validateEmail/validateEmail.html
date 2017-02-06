@@ -1,0 +1,55 @@
+<toaster-container [toasterconfig]="config1"></toaster-container>
+<div class="inner-content">
+  <div class="container">
+    <div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+  <div class="form-mid-cont">
+  <h2>Verify Your Email Code</h2>
+  <!--Hidden Message-->
+    <div [hidden]="code.valid || (code.pristine && !validateEmailForm.submitted)"
+         class="alert alert-danger">
+      <i>Verification code is required</i>
+    </div>
+<!--Hidden Message-->
+
+<!-- from start Here-->
+
+  <div class="row">
+    <div class="form-box">
+    <form  #validateEmailForm="ngForm" (ngSubmit)="onSubmit(validateEmailForm.value, validateEmailForm.valid)">
+      <div class="form-group">
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-9">
+          <input type="text" class="form-control" id="code" placeholder="Verification Code"
+                 required="" [(ngModel)]="code.verificationCode" name="code" #code="ngModel">
+        </div>
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-3 ">
+          <div class="refresh-img">
+          <a href="javascript:void(0);" (click)="sendCode()"><img src="{{ resendIcon }}"  *ngIf="resendIcon" /></a>
+        </div>
+        </div>
+<div class="col-lg-12 col-md-12 col-sm12 col-xs-12">
+        <div class="attampt-area">
+        <div class="attampt" *ngIf="attemptsLeft > 1"    >
+          <p>You have {{attemptsLeft}} more attempts</p>
+        </div>
+      <div class="attampt" *ngIf="attemptsLeft == 1" >
+        <p>You have {{attemptsLeft}} more attempt</p>
+      </div>
+      <div class="attampt" *ngIf="!attemptsLeft" >
+        <p>You cannot send any more verification code</p>
+      </div>
+    </div>
+    <button class="btn btn-lg su-btn" [disabled]="!validateEmailForm.valid" type="submit">Verify</button>
+  </div>
+
+      </div>
+    </form>
+  </div>
+  </div>
+<!-- from end Here-->
+
+</div>
+</div>
+</div>
+</div>
+</div>

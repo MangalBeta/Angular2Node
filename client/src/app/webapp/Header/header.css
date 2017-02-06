@@ -1,0 +1,17 @@
+/*
+.nav-dropdown li a.db {color:#ffffff !important;}
+.nav-dropdown li a.db:hover {color:#535353 !important;}
+
+@media (min-width:768px) and (max-width:991px){
+.nav-dropdown .link { margin: 0px 0px 0px 7px !important; font-size: 12px !important; }
+.nav-dropdown .nav-btn{ padding-left:10px;}
+.nav-dropdown .btn{ padding-left: 0.5rem; padding-right: 0.5;}
+#ext_menu-6 .navbar-caption { font-size:10px;}
+.navbar-dropdown .navbar-logo{ margin-right: 10px;}
+
+
+}*/
+.navbar {
+    border-radius: 0px ;
+    padding: 2px;
+}
